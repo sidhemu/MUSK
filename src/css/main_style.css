@@ -1,0 +1,347 @@
+body {
+   overflow-x: hidden;
+}
+
+.navbar {
+    background-image: -webkit-linear-gradient(#fff, #fff 60%, #fff);
+    background-image: -o-linear-gradient(#fff, #fff 60%, #fff);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#fff), color-stop(60%, #fff), to(#fff));
+    background-image: linear-gradient(#fff, #fff 60%, #fff);
+    background-repeat: no-repeat;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff54b4eb', endColorstr='#ff1d9ce5', GradientType=0);
+    border-bottom: 1px solid #c2c2c2;
+    -webkit-filter: none;
+    filter: none;
+    -webkit-box-shadow: 0 1px 10px rgba(0,0,0,0.1);
+    box-shadow: 0 1px 10px rgba(0,0,0,0.1);
+}
+.navbar-default {
+    background-color: #fff;
+    border-color: #c2c2c2;
+        padding-left: 200px;
+}
+
+.mainApp{
+      padding: 70px 10px 0 210px;
+}
+
+.navbar-default .navbar-brand {
+    color: #696969;
+}
+
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+    color: #696969;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: #5e6c7e;
+}
+
+.navbar-default .navbar-nav>li>a:hover,
+.navbar-default .navbar-nav>li>a:focus{
+    background-color:#5e6c7e;
+}
+
+.homePage{
+  text-align: center;
+}
+
+#wrapper {
+   padding-left: 0;
+   -webkit-transition: all 0.6s ease;
+   -moz-transition: all 0.6s ease;
+   -o-transition: all 0.6s ease;
+   transition: all 0.6s ease;
+
+}
+
+#wrapper.toggled {
+   padding-left: 200px;
+}
+
+#sidebar-wrapper {
+   z-index: 99999;
+   position: fixed;
+   left: 250px;
+
+   width: 0;
+   height: 100%;
+   margin-left: -250px;
+   overflow-y: auto;
+   background-color:#2b333d !Important;
+
+   -webkit-transition: all 0.5s ease;
+   -moz-transition: all 0.5s ease;
+   -o-transition: all 0.5s ease;
+   transition: all 0.5s ease;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+   width: 0;
+}
+
+#page-content-wrapper {
+   width: 100%;
+   position: absolute;
+   padding: 10px;
+}
+
+#wrapper.toggled #page-content-wrapper {
+   position: absolute;
+   margin-left:-250px;
+}
+
+#sidebar-wrapper .navbar-brand{
+      height: 50px;
+      background: #24272d;
+      color: #fff;
+      text-align: center;
+			width: 100%;
+			margin-left: 0px;
+}
+/* Sidebar Styles */
+
+.sidebar-nav {
+   position: absolute;
+   top: 200px;
+   width: 100%;
+   margin: 0;
+   padding: 0;
+   list-style: none;
+}
+
+.sidebar-nav li {
+   text-indent: 20px;
+   line-height: 40px;
+}
+
+.sidebar-nav li a {
+   display: block;
+   text-decoration: none;
+   color: #999999;
+}
+
+.sidebar-nav li a:hover {
+   text-decoration: none;
+   color: #fff;
+   background: #516072;
+}
+
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus {
+   text-decoration: none;
+}
+
+.sidebar-nav > .sidebar-brand {
+   height: 65px;
+   font-size: 18px;
+   line-height: 60px;
+}
+
+.sidebar-nav > .sidebar-brand a {
+   color: #999999;
+}
+
+.sidebar-nav > .sidebar-brand a:hover {
+   color: #fff;
+   background: none;
+}
+
+@media(min-width:768px) {
+   #wrapper {
+       padding-left: 220px;
+   }
+
+   #wrapper.toggled {
+       padding-left: 0;
+   }
+
+   #sidebar-wrapper {
+       width: 200px;
+   }
+
+   #wrapper.toggled #sidebar-wrapper {
+       width: 40px;
+
+
+   }
+
+#wrapper.toggled span {
+       visibility:hidden;
+
+   }
+ #wrapper.toggled   i {
+float:right;
+}
+
+   #page-content-wrapper {
+       padding: 20px;
+       position: relative;
+   }
+
+   #wrapper.toggled #page-content-wrapper {
+       position: relative;
+       margin-right: 0;
+   }
+}
+
+
+.mainCard{
+  background-color: #ededed;
+  border: 1px solid #ededed;
+}
+.formCard, .addressCard, .formTin{
+  background-color: #fff;
+  border: none;
+}
+
+.formCard h4, .addressCard h4, .formTin h4{
+  color: #2e2e2e;
+  font-size: 14px;
+  font-weight: 600px
+}
+
+.formCard{
+  display: inline-block;
+  height: 270px;
+  width: 100%;
+  padding: 20px 0;
+}
+
+.panForm{
+
+}
+
+.panForm input[type=text]{
+   width: 60%;
+   margin: 20px;
+}
+
+.react-datepicker__input-container {
+    width: 100%;
+}
+
+.formTin{
+  padding: 20px 35px;
+}
+
+.formTin input[type=text]{
+  width: 325px;
+}
+
+
+input[type=text]{
+  border: none;
+  border-bottom: 1px solid #ccc;
+}
+
+input[type=text]:focus{
+  outline: none;
+  border-bottom: 2px solid #036cff;
+}
+
+input:focus::-webkit-input-placeholder { color:transparent; }
+input:focus:-moz-placeholder { color:transparent; }
+
+.uploadForm{
+  position: relative;
+  text-align: center;
+  height: 100%;
+}
+
+.middlePart{
+  position: absolute;
+  width: 180px;
+  top: 50%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+}
+
+.middlePart p{
+  margin-top: 10px;
+}
+
+.custom-file-input {
+  color: transparent;
+
+}
+
+.dashed{
+  height: 100%;
+  width: 1px;
+  padding: 10px 0;
+  border-left: 1px dashed #444;
+}
+
+.custom-file-input::-webkit-file-upload-button {
+  visibility: hidden;
+}
+.custom-file-input::before {
+  content: 'UPLOAD';
+  color: #fff;
+  font-weight: lighter;
+  display: inline-block;
+  background: #036cff;
+  border: none;
+  border-radius: 3px;
+  padding: 10px 60px;
+  outline: none;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 10pt;
+}
+.custom-file-input:hover::before {
+  border-color: black;
+}
+.custom-file-input:active {
+  outline: 0;
+}
+.custom-file-input:active::before {
+  background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9);
+}
+
+.mdl-textfield__label:after {
+    background-color: rgb(63,81,181);
+    bottom: 15px;
+    content: '';
+    height: 2px;
+    left: 45%;
+    position: absolute;
+    transition-duration: .2s;
+    transition-timing-function: cubic-bezier(.4,0,.2,1);
+    visibility: hidden;
+    width: 10px;
+}
+
+.addressCard{
+
+}
+
+.cardNav .inline{
+  display: inline-block;
+  margin:10px;
+}
+
+.cardNav .floatRight{
+  float: right;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.w3-card h5{
+  color: #2a2a2a;
+  font-weight: 600;
+}
+
+.w3-card h5:hover,
+.w3-card h5:focus{
+  text-decoration: none;
+}
+
+.optionForm label {
+  margin-right: 50px;
+  padding: 10px 5px;
+}
